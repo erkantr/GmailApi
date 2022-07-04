@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" style="@style/Theme.MatchParent.Vertical.Main">
+    <ScrollView style="@style/Theme.MatchParent">
+        <LinearLayout android:focusableInTouchMode="true" style="@style/Theme.MatchParent.Vertical">
+            <LinearLayout android:paddingLeft="@dimen/base_dimen" android:paddingTop="@dimen/base_dimen" android:paddingRight="@dimen/base_dimen" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchParent.Vertical">
+                <LinearLayout android:id="@+id/layout_invit_tips" android:paddingTop="0dp" android:paddingBottom="0dp" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth.Vertical.Frame">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bkgd_invitationcode" style="@style/Theme.MatchWidth">
+                        <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:text="@string/tips_your_invitation_code" style="@style/Theme.WrapContent"/>
+                        <TextView android:textAppearance="@style/TextAppearance.XLarge" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/txt_invitationcode" android:textIsSelectable="false" style="@style/Theme.WrapContent"/>
+                    </LinearLayout>
+                    <TextView android:textAppearance="@style/TextAppearance.Small" android:gravity="center" android:id="@+id/txt_invite_tips" style="@style/Theme.WrapContent"/>
+                    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right" android:background="@drawable/bkgd_invite_nanas" android:paddingRight="@dimen/base_dimen" android:paddingBottom="@dimen/base_dimen" android:layout_marginTop="@dimen/base_dimen" android:layout_marginRight="-13.5dp" style="@style/Theme.WrapContent.Vertical">
+                        <TextView android:textAppearance="@style/TextAppearance.Large" android:textColor="@android:color/white" android:id="@+id/txt_invite_nanas" android:textIsSelectable="false" style="@style/Theme.WrapContent"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@android:color/white" android:text="@string/tips_nana_friend" style="@style/Theme.WrapContent"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+                    <RelativeLayout android:background="@color/light_gray" style="@style/Theme.MatchWidth.ListHeaderFrame">
+                        <ImageView android:src="@drawable/ic_list_header_share" android:layout_centerVertical="true" android:contentDescription="@string/tips_share" style="@style/Theme.WrapContent"/>
+                        <TextView android:text="@string/tips_share" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent.ListHeaderText"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.appnana.android.offerwall.views.OfferWallLayout android:orientation="vertical" android:id="@+id/layout_share_list" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Offer.OfferWall"/>
+                <LinearLayout android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+                    <RelativeLayout android:background="@color/light_gray" style="@style/Theme.MatchWidth.ListHeaderFrame">
+                        <ImageView android:src="@drawable/ic_list_header_account" android:layout_centerVertical="true" android:contentDescription="@string/tips_account" style="@style/Theme.WrapContent"/>
+                        <TextView android:text="@string/tips_account" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent.ListHeaderText"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/Theme.MatchWidth.Vertical.OfferList">
+                    <RelativeLayout android:id="@+id/layout_account" android:clickable="true" style="@style/Theme.MatchWidth.OfferItem">
+                        <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@drawable/color_black_white" android:gravity="center_vertical" android:id="@+id/txt_account" android:duplicateParentState="true" android:drawableLeft="@drawable/ic_list_register" android:drawablePadding="@dimen/base_dimen" android:layout_centerVertical="true" style="@style/Theme.WrapContent"/>
+                        <ImageView android:duplicateParentState="true" android:src="@drawable/ic_list_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/tips_account" style="@style/Theme.WrapContent"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@+id/txt_version" android:layout_marginTop="@dimen/base_dimen" android:textIsSelectable="true" style="@style/Theme.WrapContent"/>
+            </LinearLayout>
+            <com.mopub.mobileads.MoPubView android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ad_view" android:tag="@string/ad_banner_on_invite_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen"/>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@+id/probar_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:padding="@dimen/base_dimen" style="@style/Theme.MatchWidth.Vertical">
+    <Button android:id="@android:id/closeButton" android:layout_alignParentRight="true" style="@style/Theme.Button.Close"/>
+    <LinearLayout style="@style/Theme.MatchWidth.Vertical">
+        <TextView android:textAppearance="@style/TextAppearance.Large" android:textColor="@color/orange" android:layout_gravity="center_horizontal" android:text="@string/tips_nana_register" android:drawableLeft="@drawable/ic_launcher_appnana" android:drawablePadding="@dimen/base_dimen" style="@style/Theme.WrapContent"/>
+        <EditText android:id="@+id/edit_email" android:layout_marginTop="@dimen/base_dimen" android:hint="@string/tips_email" android:inputType="textEmailAddress" style="@style/Theme.MatchWidth.Input"/>
+        <EditText android:id="@+id/edit_password" android:layout_marginTop="@dimen/base_dimen" android:hint="@string/tips_password" android:inputType="textPassword" style="@style/Theme.MatchWidth.Input"/>
+        <Button android:id="@+id/btn_register" android:layout_marginTop="@dimen/base_dimen" android:text="@string/tips_register" style="@style/Theme.Button.Orange"/>
+        <Button android:textAppearance="@style/TextAppearance.Medium" android:id="@+id/btn_login" android:layout_marginTop="@dimen/base_dimen" android:text="@string/tips_already_registered" style="@style/Theme.Button.Link"/>
+        <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@color/terms_gray" android:gravity="center_horizontal" android:id="@+id/txt_terms" android:layout_marginTop="@dimen/base_dimen" android:text="@string/tips_terms_service" style="@style/Theme.MatchWidth"/>
+    </LinearLayout>
+</RelativeLayout>

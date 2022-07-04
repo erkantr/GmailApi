@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" style="@style/Theme.MatchParent.Vertical.RewardBackground">
+    <LinearLayout android:focusableInTouchMode="true" style="@style/Theme.MatchParent.Vertical">
+        <RelativeLayout android:id="@+id/layout_howto" android:paddingLeft="@dimen/base_dimen" android:paddingRight="@dimen/base_dimen" style="@style/Theme.MatchWidth.GreenTexture.Clickable">
+            <TextView android:text="@string/tips_how_it_works" style="@style/Theme.WrapContent.HeaderTipsText"/>
+            <ImageView android:src="@drawable/ic_arrow_pressed" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/tips_how_it_works" style="@style/Theme.WrapContent"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:paddingRight="@dimen/base_dimen" android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchParent">
+            <TextView android:textColor="@color/gray_dropdown_pressed" android:text="@string/tips_country" style="@style/Theme.WrapContent"/>
+            <com.appnana.android.giftcardrewards.CountrySpinner android:id="@+id/spinner_country" android:layout_marginLeft="@dimen/base_dimen" style="@style/Theme.WrapContent.CountrySpinner"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_rewards" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth.Vertical"/>
+        <Button android:id="@+id/btn_help" android:layout_marginLeft="@dimen/base_dimen" android:layout_marginTop="@dimen/base_dimen" android:layout_marginRight="@dimen/base_dimen" android:text="@string/tips_help" style="@style/Theme.Button.Orange"/>
+        <com.mopub.mobileads.MoPubView android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ad_view" android:tag="@string/ad_banner_on_reward_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen"/>
+    </LinearLayout>
+</ScrollView>

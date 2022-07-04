@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" style="@style/Theme.MatchWidth.Vertical">
+    <LinearLayout android:background="@color/black" android:padding="@dimen/base_dimen" style="@style/Theme.MatchWidth.Vertical">
+        <Button android:layout_gravity="right" android:id="@+id/btn_close_symbol" android:layout_width="20dp" android:layout_height="20dp" android:text="@string/btn_close" style="@style/Theme.Button.GrayCircle"/>
+        <LinearLayout android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.WrapContent">
+            <ImageView android:id="@+id/img_icon" android:layout_width="@dimen/reward_icon_size" android:layout_height="@dimen/reward_icon_size" android:contentDescription="@string/tips_loading_title" style="@style/Theme.WrapContent"/>
+            <LinearLayout android:layout_marginLeft="@dimen/base_dimen" style="@style/Theme.WrapContent.Vertical">
+                <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/yellow" android:id="@+id/txt_title" style="@style/Theme.WrapContent"/>
+                <LinearLayout android:id="@+id/layout_guest" style="@style/Theme.WrapContent.Vertical">
+                    <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@android:color/white" android:layout_marginTop="@dimen/base_dimen" android:text="@string/tips_must_login_or_register" style="@style/Theme.WrapContent"/>
+                    <Button android:id="@+id/btn_register" android:layout_marginTop="@dimen/base_dimen" android:text="@string/tips_register_get_nanas" style="@style/Theme.Button.Green.Small"/>
+                    <Button android:id="@+id/btn_login" android:layout_marginTop="@dimen/base_dimen" android:text="@string/tips_login" style="@style/Theme.Button.Orange.Small"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/layout_logged" android:visibility="gone" style="@style/Theme.WrapContent.Vertical">
+                    <LinearLayout style="@style/Theme.WrapContent.Vertical">
+                        <LinearLayout android:id="@+id/layout_user_email" android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.WrapContent">
+                            <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@android:color/white" android:text="@string/tips_email_with_colon" style="@style/Theme.WrapContent"/>
+                            <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@android:color/white" android:id="@+id/txt_user_email" style="@style/Theme.WrapContent"/>
+                        </LinearLayout>
+                        <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@android:color/white" android:id="@+id/txt_tips_redeem" android:layout_marginTop="@dimen/base_dimen" android:text="@string/redeem_reward_card" style="@style/Theme.WrapContent"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/layout_paypal_info" android:visibility="gone" android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth.Vertical">
+                        <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/txt_paypal_account" android:drawableLeft="@drawable/ic_paypal" android:drawablePadding="@dimen/base_dimen" style="@style/Theme.WrapContent"/>
+                        <EditText android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@color/black" android:id="@+id/edit_paypal_account" android:layout_height="24dp" android:layout_marginTop="@dimen/base_dimen" android:hint="@string/tips_paypal_email" android:inputType="textEmailAddress" style="@style/Theme.MatchWidth.Input"/>
+                    </LinearLayout>
+                    <EditText android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@color/black" android:id="@+id/edit_bitcoin_address" android:visibility="gone" android:layout_height="24dp" android:layout_marginTop="@dimen/base_dimen" android:hint="@string/tips_bitcoin_address" style="@style/Theme.MatchWidth.Input"/>
+                    <EditText android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@color/black" android:id="@+id/edit_user_name" android:layout_height="24dp" android:layout_marginTop="@dimen/base_dimen" android:hint="@string/tips_name" style="@style/Theme.MatchWidth.Input"/>
+                    <LinearLayout android:id="@+id/layout_refund_tips" style="@style/Theme.MatchWidth.Vertical.RefundTips">
+                        <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@color/yellow" android:gravity="center" android:id="@+id/txt_refund_title" style="@style/Theme.MatchWidth"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@color/yellow" android:gravity="center" android:id="@+id/txt_refund_body" style="@style/Theme.MatchWidth"/>
+                    </LinearLayout>
+                    <Button android:id="@+id/btn_redeem" android:layout_marginTop="@dimen/base_dimen" android:text="@string/btn_redeem" style="@style/Theme.Button.Orange.Small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.Tiny" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="right" android:id="@+id/txt_reward_scope" android:layout_marginLeft="@dimen/base_dimen" android:layout_marginTop="@dimen/base_dimen" android:drawablePadding="@dimen/base_dimen" style="@style/Theme.WrapContent"/>
+    </LinearLayout>
+</LinearLayout>

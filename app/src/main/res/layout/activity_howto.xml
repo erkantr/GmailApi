@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" style="@style/Theme.MatchParent.Vertical">
+    <RelativeLayout style="@style/Theme.MatchWidth.TopBar">
+        <Button android:id="@+id/btn_back" android:layout_centerVertical="true" style="@style/Theme.Button.GrayBack"/>
+        <TextView android:textAppearance="@style/TextAppearance.XLarge" android:textColor="@color/black" android:id="@+id/txt_poitns" android:text="@string/tips_how_it_works" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent"/>
+    </RelativeLayout>
+    <FrameLayout style="@style/Theme.MatchParent.Vertical.Main">
+        <LinearLayout style="@style/Theme.MatchParent.Vertical.Main">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <C android:id="@+id/indicator" android:padding="10dp" android:visibility="gone" style="@style/Theme.MatchWidth"/>
+        </LinearLayout>
+        <include layout="@layout/widget_shadow"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Theme.MatchParent.Vertical.Main">
+    <LinearLayout style="@style/Theme.MatchParent.Vertical.Main">
+        <RelativeLayout style="@style/Theme.MatchWidth.TopBar">
+            <Button android:id="@+id/btn_back" android:layout_centerVertical="true" style="@style/Theme.Button.GrayBack"/>
+            <TextView android:textAppearance="@style/TextAppearance.XLarge" android:textColor="@color/black" android:id="@+id/txt_title" android:text="@string/tips_help" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent"/>
+        </RelativeLayout>
+        <FrameLayout style="@style/Theme.MatchParent.Vertical.Main">
+            <WebView android:id="@+id/web_browser" style="@style/Theme.MatchParent.Vertical.Main"/>
+            <include layout="@layout/widget_shadow"/>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/widget_progress"/>
+</RelativeLayout>

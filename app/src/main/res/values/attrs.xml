@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="background" format="reference|color">
+    </attr>
+    <attr name="backgroundSplit" format="reference|color">
+    </attr>
+    <attr name="centered" format="boolean">
+    </attr>
+    <attr name="divider" format="reference">
+    </attr>
+    <attr name="height" format="dimension">
+    </attr>
+    <attr name="selectedColor" format="color">
+    </attr>
+    <attr name="strokeWidth" format="dimension">
+    </attr>
+    <attr name="subtitleTextStyle" format="reference">
+    </attr>
+    <attr name="titleTextStyle" format="reference">
+    </attr>
+    <attr name="unselectedColor" format="color">
+    </attr>
+    <attr name="adSize" format="string">
+    </attr>
+    <attr name="adSizes" format="string">
+    </attr>
+    <attr name="adUnitId" format="string">
+    </attr>
+    <attr name="fillColor" format="color">
+    </attr>
+    <attr name="pageColor" format="color">
+    </attr>
+    <attr name="radius" format="dimension">
+    </attr>
+    <attr name="snap" format="boolean">
+    </attr>
+    <attr name="strokeColor" format="color">
+    </attr>
+    <attr name="fontProviderAuthority" format="string">
+    </attr>
+    <attr name="fontProviderPackage" format="string">
+    </attr>
+    <attr name="fontProviderQuery" format="string">
+    </attr>
+    <attr name="fontProviderCerts" format="reference">
+    </attr>
+    <attr name="fontProviderFetchStrategy">
+        <enum name="async" value="1" />
+        <enum name="blocking" value="0" />
+    </attr>
+    <attr name="fontProviderFetchTimeout" format="integer">
+        <enum name="forever" value="-1" />
+    </attr>
+    <attr name="fontStyle">
+        <enum name="italic" value="1" />
+        <enum name="normal" value="0" />
+    </attr>
+    <attr name="font" format="reference">
+    </attr>
+    <attr name="fontWeight" format="integer">
+    </attr>
+    <attr name="lineWidth" format="dimension">
+    </attr>
+    <attr name="gapWidth" format="dimension">
+    </attr>
+    <attr name="imageAspectRatioAdjust">
+        <enum name="adjust_height" value="2" />
+        <enum name="adjust_width" value="1" />
+        <enum name="none" value="0" />
+    </attr>
+    <attr name="imageAspectRatio" format="float">
+    </attr>
+    <attr name="circleCrop" format="boolean">
+    </attr>
+    <attr name="layoutManager" format="string">
+    </attr>
+    <attr name="spanCount" format="integer">
+    </attr>
+    <attr name="reverseLayout" format="boolean">
+    </attr>
+    <attr name="stackFromEnd" format="boolean">
+    </attr>
+    <attr name="fastScrollEnabled" format="boolean">
+    </attr>
+    <attr name="fastScrollVerticalThumbDrawable" format="reference">
+    </attr>
+    <attr name="fastScrollVerticalTrackDrawable" format="reference">
+    </attr>
+    <attr name="fastScrollHorizontalThumbDrawable" format="reference">
+    </attr>
+    <attr name="fastScrollHorizontalTrackDrawable" format="reference">
+    </attr>
+    <attr name="navigationMode">
+        <enum name="normal" value="0" />
+        <enum name="listMode" value="1" />
+        <enum name="tabMode" value="2" />
+    </attr>
+    <attr name="displayOptions">
+        <flag name="disableHome" value="20" />
+        <flag name="homeAsUp" value="4" />
+        <flag name="showCustom" value="10" />
+        <flag name="showHome" value="2" />
+        <flag name="showTitle" value="8" />
+        <flag name="useLogo" value="1" />
+    </attr>
+    <attr name="title" format="string">
+    </attr>
+    <attr name="subtitle" format="string">
+    </attr>
+    <attr name="icon" format="reference">
+    </attr>
+    <attr name="logo" format="reference">
+    </attr>
+    <attr name="backgroundStacked" format="reference|color">
+    </attr>
+    <attr name="customNavigationLayout" format="reference">
+    </attr>
+    <attr name="homeLayout" format="reference">
+    </attr>
+    <attr name="progressBarStyle" format="reference">
+    </attr>
+    <attr name="indeterminateProgressStyle" format="reference">
+    </attr>
+    <attr name="progressBarPadding" format="dimension">
+    </attr>
+    <attr name="itemPadding" format="dimension">
+    </attr>
+    <attr name="initialActivityCount" format="string">
+    </attr>
+    <attr name="expandActivityOverflowButtonDrawable" format="reference">
+    </attr>
+    <attr name="itemTextAppearance" format="reference">
+    </attr>
+    <attr name="horizontalDivider" format="reference">
+    </attr>
+    <attr name="verticalDivider" format="reference">
+    </attr>
+    <attr name="headerBackground" format="reference|color">
+    </attr>
+    <attr name="itemBackground" format="reference|color">
+    </attr>
+    <attr name="windowAnimationStyle" format="reference">
+    </attr>
+    <attr name="itemIconDisabledAlpha" format="float">
+    </attr>
+    <attr name="preserveIconSpacing" format="boolean">
+    </attr>
+    <attr name="iconifiedByDefault" format="boolean">
+    </attr>
+    <attr name="queryHint" format="string">
+    </attr>
+    <attr name="actionBarTabStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarTabTextStyle" format="reference">
+    </attr>
+    <attr name="actionOverflowButtonStyle" format="reference">
+    </attr>
+    <attr name="actionBarStyle" format="reference">
+    </attr>
+    <attr name="actionBarSplitStyle" format="reference">
+    </attr>
+    <attr name="actionBarWidgetTheme" format="reference">
+    </attr>
+    <attr name="actionBarSize" format="dimension">
+        <enum name="wrap_content" value="0" />
+    </attr>
+    <attr name="actionBarDivider" format="reference">
+    </attr>
+    <attr name="actionBarItemBackground" format="reference">
+    </attr>
+    <attr name="actionMenuTextAppearance" format="reference">
+    </attr>
+    <attr name="actionMenuTextColor" format="reference|color">
+    </attr>
+    <attr name="actionModeStyle" format="reference">
+    </attr>
+    <attr name="actionModeCloseButtonStyle" format="reference">
+    </attr>
+    <attr name="actionModeBackground" format="reference">
+    </attr>
+    <attr name="actionModeSplitBackground" format="reference">
+    </attr>
+    <attr name="actionModeCloseDrawable" format="reference">
+    </attr>
+    <attr name="actionModeShareDrawable" format="reference">
+    </attr>
+    <attr name="actionModePopupWindowStyle" format="reference">
+    </attr>
+    <attr name="buttonStyleSmall" format="reference">
+    </attr>
+    <attr name="selectableItemBackground" format="reference">
+    </attr>
+    <attr name="windowContentOverlay" format="reference">
+    </attr>
+    <attr name="textAppearanceLargePopupMenu" format="reference">
+    </attr>
+    <attr name="textAppearanceSmallPopupMenu" format="reference">
+    </attr>
+    <attr name="textAppearanceSmall" format="reference">
+    </attr>
+    <attr name="textColorPrimary" format="color">
+    </attr>
+    <attr name="textColorPrimaryDisableOnly" format="color">
+    </attr>
+    <attr name="textColorPrimaryInverse" format="color">
+    </attr>
+    <attr name="spinnerItemStyle" format="reference">
+    </attr>
+    <attr name="spinnerDropDownItemStyle" format="reference">
+    </attr>
+    <attr name="searchAutoCompleteTextView" format="reference">
+    </attr>
+    <attr name="searchDropdownBackground" format="reference">
+    </attr>
+    <attr name="searchViewCloseIcon" format="reference">
+    </attr>
+    <attr name="searchViewGoIcon" format="reference">
+    </attr>
+    <attr name="searchViewSearchIcon" format="reference">
+    </attr>
+    <attr name="searchViewVoiceIcon" format="reference">
+    </attr>
+    <attr name="searchViewEditQuery" format="reference">
+    </attr>
+    <attr name="searchViewEditQueryBackground" format="reference">
+    </attr>
+    <attr name="searchViewTextField" format="reference">
+    </attr>
+    <attr name="searchViewTextFieldRight" format="reference">
+    </attr>
+    <attr name="textColorSearchUrl" format="reference|color">
+    </attr>
+    <attr name="searchResultListItemHeight" format="dimension">
+    </attr>
+    <attr name="textAppearanceSearchResultTitle" format="reference">
+    </attr>
+    <attr name="textAppearanceSearchResultSubtitle" format="reference">
+    </attr>
+    <attr name="listPreferredItemHeightSmall" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingLeft" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingRight" format="dimension">
+    </attr>
+    <attr name="textAppearanceListItemSmall" format="reference">
+    </attr>
+    <attr name="windowMinWidthMajor" format="dimension">
+    </attr>
+    <attr name="windowMinWidthMinor" format="dimension">
+    </attr>
+    <attr name="dividerVertical" format="reference">
+    </attr>
+    <attr name="actionDropDownStyle" format="reference">
+    </attr>
+    <attr name="actionButtonStyle" format="reference">
+    </attr>
+    <attr name="homeAsUpIndicator" format="reference">
+    </attr>
+    <attr name="dropDownListViewStyle" format="reference">
+    </attr>
+    <attr name="popupMenuStyle" format="reference">
+    </attr>
+    <attr name="dropdownListPreferredItemHeight" format="dimension">
+    </attr>
+    <attr name="actionSpinnerItemStyle" format="reference">
+    </attr>
+    <attr name="windowNoTitle" format="boolean">
+    </attr>
+    <attr name="windowActionBar" format="boolean">
+    </attr>
+    <attr name="windowActionBarOverlay" format="boolean">
+    </attr>
+    <attr name="windowActionModeOverlay" format="boolean">
+    </attr>
+    <attr name="windowSplitActionBar" format="boolean">
+    </attr>
+    <attr name="listPopupWindowStyle" format="reference">
+    </attr>
+    <attr name="activityChooserViewStyle" format="reference">
+    </attr>
+    <attr name="activatedBackgroundIndicator" format="reference">
+    </attr>
+    <attr name="dropDownHintAppearance" format="reference">
+    </attr>
+    <attr name="buttonSize" format="reference">
+        <enum name="icon_only" value="2" />
+        <enum name="standard" value="0" />
+        <enum name="wide" value="1" />
+    </attr>
+    <attr name="colorScheme" format="reference">
+        <enum name="auto" value="2" />
+        <enum name="dark" value="0" />
+        <enum name="light" value="1" />
+    </attr>
+    <attr name="scopeUris" format="reference|string">
+    </attr>
+    <attr name="clipPadding" format="dimension">
+    </attr>
+    <attr name="footerColor" format="color">
+    </attr>
+    <attr name="footerLineHeight" format="dimension">
+    </attr>
+    <attr name="footerIndicatorStyle">
+        <enum name="none" value="0" />
+        <enum name="triangle" value="1" />
+        <enum name="underline" value="2" />
+    </attr>
+    <attr name="footerIndicatorHeight" format="dimension">
+    </attr>
+    <attr name="footerIndicatorUnderlinePadding" format="dimension">
+    </attr>
+    <attr name="footerPadding" format="dimension">
+    </attr>
+    <attr name="linePosition">
+        <enum name="bottom" value="0" />
+        <enum name="top" value="1" />
+    </attr>
+    <attr name="selectedBold" format="boolean">
+    </attr>
+    <attr name="titlePadding" format="dimension">
+    </attr>
+    <attr name="topPadding" format="dimension">
+    </attr>
+    <attr name="fades" format="boolean">
+    </attr>
+    <attr name="fadeDelay" format="integer">
+    </attr>
+    <attr name="fadeLength" format="integer">
+    </attr>
+    <attr name="vpiCirclePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiIconPageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiLinePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiTitlePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiTabPageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="com_facebook_foreground_color" format="color">
+    </attr>
+    <attr name="com_facebook_object_id" format="string">
+    </attr>
+    <attr name="com_facebook_object_type">
+        <enum name="open_graph" value="1" />
+        <enum name="page" value="2" />
+        <enum name="unknown" value="0" />
+    </attr>
+    <attr name="com_facebook_style">
+        <enum name="standard" value="0" />
+        <enum name="box_count" value="2" />
+        <enum name="button" value="1" />
+    </attr>
+    <attr name="com_facebook_auxiliary_view_position">
+        <enum name="bottom" value="0" />
+        <enum name="top" value="2" />
+        <enum name="inline" value="1" />
+    </attr>
+    <attr name="com_facebook_horizontal_alignment">
+        <enum name="center" value="0" />
+        <enum name="left" value="1" />
+        <enum name="right" value="2" />
+    </attr>
+    <attr name="com_facebook_confirm_logout" format="boolean">
+    </attr>
+    <attr name="com_facebook_login_text" format="string">
+    </attr>
+    <attr name="com_facebook_logout_text" format="string">
+    </attr>
+    <attr name="com_facebook_tooltip_mode">
+        <enum name="automatic" value="0" />
+        <enum name="display_always" value="1" />
+        <enum name="never_display" value="2" />
+    </attr>
+    <attr name="com_facebook_preset_size">
+        <enum name="normal" value="-3" />
+        <enum name="large" value="-4" />
+        <enum name="small" value="-2" />
+    </attr>
+    <attr name="com_facebook_is_cropped" format="boolean">
+    </attr>
+</resources>

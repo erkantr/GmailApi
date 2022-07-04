@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/abs__action_mode_close_button" android:paddingLeft="8dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="16dp" style="?attr/actionModeCloseButtonStyle">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/actionModeCloseDrawable" android:scaleType="fitCenter"/>
+</com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout>

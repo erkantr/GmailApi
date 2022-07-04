@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_invite" android:paddingBottom="0dp" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth.OfferItem">
+    <ImageView android:id="@+id/img_invite" android:paddingBottom="@dimen/base_dimen" android:duplicateParentState="true" android:src="@drawable/ic_list_invite" android:contentDescription="@string/tips_invite_friends" style="@style/Theme.WrapContent"/>
+    <LinearLayout android:id="@+id/layout_invite_text" android:duplicateParentState="true" android:layout_marginLeft="@dimen/base_dimen" android:layout_toRightOf="@+id/img_invite" style="@style/Theme.WrapContent.Vertical">
+        <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@drawable/color_black_white" android:id="@+id/txt_invite_friends" android:duplicateParentState="true" android:text="@string/tips_invite_friends" style="@style/Theme.WrapContent"/>
+    </LinearLayout>
+    <include android:id="@+id/layout_invite_nanas" android:layout_toRightOf="@+id/layout_invite_text" layout="@layout/widget_nanas_friend"/>
+</RelativeLayout>

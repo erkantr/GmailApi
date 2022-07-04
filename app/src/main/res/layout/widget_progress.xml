@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_loading" android:background="@android:drawable/screen_background_dark_transparent" android:visibility="gone" android:clickable="true" style="@style/Theme.MatchParent">
+    <ProgressBar android:layout_centerInParent="true" style="@style/Theme.WrapContent"/>
+</RelativeLayout>

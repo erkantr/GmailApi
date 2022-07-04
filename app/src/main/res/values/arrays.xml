@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="offers">
+        <item>Nana Offers 1 (Recommend)</item>
+        <item>Nana Offers 2 (Recommend)</item>
+        <item>Nana Offers 3 (Recommend)</item>
+        <item>Nana Offers 4 - Videos</item>
+        <item>Nana Offers 5</item>
+        <item>Nana Offers 6</item>
+    </array>
+    <array name="ad_native_express_ids">
+        <item>98b5938d57b14c3aa4998d359cbe9973</item>
+        <item>b814af08718e4869a2e6b54e5d653fd6</item>
+    </array>
+</resources>

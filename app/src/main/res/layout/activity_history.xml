@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Theme.MatchParent.Vertical.Main">
+    <RelativeLayout android:id="@+id/layout_topbar" style="@style/Theme.MatchWidth.TopBar">
+        <Button android:id="@+id/btn_back" android:layout_centerVertical="true" style="@style/Theme.Button.GrayBack"/>
+        <TextView android:textAppearance="@style/TextAppearance.XLarge" android:textColor="@color/black" android:text="@string/tips_history" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Theme.WrapContent"/>
+    </RelativeLayout>
+    <ListView android:id="@android:id/list" android:padding="@dimen/base_dimen" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/drawable_transaction_gray" android:divider="@null" android:layout_below="@+id/layout_topbar"/>
+    <TextView android:gravity="center" android:id="@android:id/empty" android:padding="@dimen/base_dimen" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loading" android:layout_below="@+id/layout_topbar"/>
+    <include android:layout_width="match_parent" android:layout_height="5dp" android:layout_below="@+id/layout_topbar" layout="@layout/widget_shadow"/>
+    <RelativeLayout android:id="@+id/layout_popup" android:background="@color/black" android:padding="@dimen/base_dimen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/base_dimen" android:layout_below="@+id/layout_topbar">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/yellow" android:gravity="center_horizontal" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pending_nanas_title"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@+id/txt_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pending_nanas_body" android:layout_below="@+id/txt_title"/>
+        <Button android:id="@+id/btn_close_symbol" android:clickable="false" android:duplicateParentState="true" android:layout_width="20dp" android:layout_height="20dp" android:text="@string/btn_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Theme.Button.GrayCircle"/>
+    </RelativeLayout>
+</RelativeLayout>

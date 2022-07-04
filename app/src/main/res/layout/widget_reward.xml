@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:paddingRight="@dimen/base_dimen" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.WrapContent">
+    <ImageView android:id="@+id/img_icon" android:contentDescription="@string/btn_redeem" style="@style/Theme.WrapContent.Reward"/>
+    <RelativeLayout android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.WrapContent.Reward">
+        <ImageView android:contentDescription="@string/btn_redeem" style="@style/Theme.WrapContent.Reward.Mask"/>
+        <TextView android:id="@+id/txt_refund_percent" style="@style/Theme.WrapContent.RefundNanas"/>
+    </RelativeLayout>
+</RelativeLayout>

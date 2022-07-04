@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_invitation" android:padding="@dimen/base_dimen" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth.Vertical">
+    <LinearLayout android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth">
+        <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:id="@+id/txt_tips_invitation" android:text="@string/tips_invitation" android:layout_weight="0.5" style="@style/Theme.WrapContent"/>
+        <include android:id="@+id/layout_invitation_nanas" android:layout_weight="0.5" layout="@layout/widget_nanas"/>
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+        <EditText android:id="@+id/edit_invitation" android:layout_width="0dp" android:hint="@string/tips_other_invitation_code" android:layout_weight="0.6" style="@style/Theme.MatchWidth.Input"/>
+        <Button android:id="@+id/btn_enter" android:paddingLeft="@dimen/base_dimen" android:paddingRight="@dimen/base_dimen" android:layout_width="0dp" android:layout_marginLeft="@dimen/base_dimen" android:text="@string/btn_enter" android:layout_weight="0.4" style="@style/Theme.Button.Orange"/>
+    </LinearLayout>
+</LinearLayout>

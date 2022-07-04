@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/green"/>
+    <item android:drawable="@drawable/bkgd_texture"/>
+    <item android:drawable="@drawable/mask_layer"/>
+</layer-list>

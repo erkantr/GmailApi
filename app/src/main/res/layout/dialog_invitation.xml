@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:padding="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+    <LinearLayout android:padding="@dimen/base_dimen" style="@style/Theme.MatchParent.Vertical.Main">
+        <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@color/orange" android:gravity="center_horizontal" android:id="@+id/txt_title" android:text="@string/tips_success" style="@style/Theme.MatchWidth"/>
+        <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/txt_received_nanas" android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth"/>
+        <RelativeLayout android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+            <LinearLayout android:background="@drawable/border_dotted" android:padding="@dimen/base_dimen" android:clipChildren="false" android:clipToPadding="false" android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth.Vertical">
+                <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_marginTop="@dimen/base_dimen" android:text="@string/input_again_title" style="@style/Theme.MatchWidth"/>
+                <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:gravity="center_horizontal" android:text="@string/no_daily_nanas_body_4" style="@style/Theme.MatchWidth"/>
+                <TextView android:textAppearance="@style/TextAppearance.XXLarge" android:textColor="@color/green" android:gravity="center_horizontal" android:id="@+id/txt_invite_times" android:layout_marginTop="-8dp" android:text="@string/input_code_again_times" style="@style/Theme.MatchWidth"/>
+                <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/txt_message" android:layout_marginTop="-8dp" android:text="@string/dialog_invitation_message" style="@style/Theme.MatchWidth"/>
+            </LinearLayout>
+            <ImageView android:src="@drawable/ic_down_arrow" android:layout_centerHorizontal="true" android:contentDescription="@string/input_again_title" style="@style/Theme.WrapContent"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+            <Button android:id="@+id/btn_negative" android:layout_marginRight="4dp" android:text="@string/btn_ok" android:layout_weight="0.5" style="@style/Theme.Button.White"/>
+            <Button android:id="@+id/btn_positive" android:layout_marginLeft="4dp" android:text="@string/nav_invite" android:layout_weight="0.5" style="@style/Theme.Button.Orange"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

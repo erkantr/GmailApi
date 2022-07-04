@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Theme.MatchParent.Vertical">
+    <LinearLayout style="@style/Theme.MatchParent.Vertical">
+        <RelativeLayout style="@style/Theme.MatchWidth.TopBar">
+            <LinearLayout android:gravity="right" android:id="@+id/layout_auth" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent">
+                <TextView android:textColor="@color/yellow" android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/bkgd_auth_tips" android:text="@string/tips_login_or_register" style="@style/Theme.WrapContent"/>
+                <Button android:layout_gravity="center_vertical" android:id="@+id/btn_auth" android:background="@drawable/btn_auth" android:layout_width="64dp" android:layout_height="64dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:id="@+id/layout_points_shown" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent.Vertical">
+                <TextView android:textAppearance="@style/TextAppearance.XXLarge" android:id="@+id/txt_poitns" android:textIsSelectable="false" style="@style/Theme.WrapContent"/>
+                <TextView android:textAppearance="@style/TextAppearance.Small" android:layout_marginTop="-8dp" android:text="@string/header_currency" style="@style/Theme.WrapContent"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/orange" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.viewpagerindicator.AppNanaTabPageIndicator android:id="@+id/indicator" style="@style/Theme.MatchWidth"/>
+        <FrameLayout style="@style/Theme.MatchParent">
+            <com.appnana.android.giftcardrewards.NoScrollViewPager android:id="@+id/pager" style="@style/Theme.MatchParent"/>
+            <include layout="@layout/widget_shadow"/>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/widget_progress"/>
+</RelativeLayout>

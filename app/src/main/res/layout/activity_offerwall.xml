@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" style="@style/Theme.MatchParent.Vertical.Main">
+    <LinearLayout style="@style/Theme.MatchParent.Vertical.Main">
+        <RelativeLayout style="@style/Theme.MatchWidth.TopBar">
+            <Button android:id="@+id/btn_back" android:layout_centerVertical="true" style="@style/Theme.Button.GrayBack"/>
+            <TextView android:textAppearance="@style/TextAppearance.XLarge" android:textColor="@color/black" android:id="@+id/txt_title" android:text="@string/tips_offers" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent"/>
+        </RelativeLayout>
+        <FrameLayout style="@style/Theme.MatchParent.Vertical.Main">
+            <ScrollView style="@style/Theme.MatchParent.Vertical.Main">
+                <LinearLayout android:padding="@dimen/base_dimen" style="@style/Theme.MatchParent.Vertical.Main">
+                    <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@+id/txt_offer_tips" android:visibility="gone" android:textIsSelectable="false" style="@style/Theme.WrapContent"/>
+                    <ListView android:id="@+id/lst_download_offer" android:divider="@color/light_gray" android:dividerHeight="1px" style="@style/Theme.MatchWidth"/>
+                </LinearLayout>
+            </ScrollView>
+            <include layout="@layout/widget_shadow"/>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/widget_progress"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" style="@style/Theme.MatchParent.Vertical.Main">
+    <ScrollView style="@style/Theme.MatchParent.Vertical.Main">
+        <LinearLayout android:focusableInTouchMode="true" style="@style/Theme.MatchParent.Vertical.Main">
+            <TextView android:gravity="center" android:id="@+id/txt_daily_reward" android:background="@drawable/bkgd_green_texture" android:layout_width="match_parent" android:text="@string/tips_get_daily_nanas" style="@style/Theme.WrapContent.HeaderTipsText"/>
+            <LinearLayout android:paddingLeft="@dimen/base_dimen" android:paddingTop="@dimen/base_dimen" android:paddingRight="@dimen/base_dimen" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchParent.Vertical.Main">
+                <LinearLayout style="@style/Theme.WrapContent">
+                    <RelativeLayout android:id="@+id/header_join" android:background="@color/light_gray" style="@style/Theme.MatchWidth.ListHeaderFrame">
+                        <ImageView android:src="@drawable/ic_list_header_join" android:layout_centerVertical="true" style="@style/Theme.WrapContent"/>
+                        <TextView android:id="@+id/txt_invite_info" android:clickable="true" android:text="@string/input_again_title" android:drawableRight="@drawable/ic_info" android:drawablePadding="@dimen/base_dimen" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent.ListHeaderText"/>
+                        <TextView android:visibility="invisible" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent.ListHeaderText"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth.Vertical.OfferList">
+                    <include layout="@layout/widget_listitem_register"/>
+                    <include layout="@layout/widget_listitem_invitation"/>
+                    <include layout="@layout/widget_listitem_invite"/>
+                </LinearLayout>
+                <LinearLayout style="@style/Theme.WrapContent">
+                    <RelativeLayout android:background="@color/light_gray" style="@style/Theme.MatchWidth.ListHeaderFrame">
+                        <ImageView android:src="@drawable/ic_list_header_download" android:layout_centerVertical="true" android:contentDescription="@string/tips_offers" style="@style/Theme.WrapContent"/>
+                        <TextView android:text="@string/tips_offers" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.WrapContent.ListHeaderText"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.appnana.android.offerwall.views.OfferWallLayout android:orientation="vertical" android:id="@+id/layout_offerwall" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Offer.OfferWall"/>
+                <Button android:id="@+id/btn_help_history" android:layout_marginTop="@dimen/base_dimen" android:text="@string/tips_history" style="@style/Theme.Button.Orange"/>
+            </LinearLayout>
+            <com.mopub.mobileads.MoPubView android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ad_view" android:tag="@string/ad_banner_on_offerwall_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen"/>
+            <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_dimen_x2" android:src="@drawable/btn_gamecenter"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/layout_invite_info" android:paddingLeft="@dimen/base_dimen" android:paddingRight="32dp" android:visibility="gone" android:clickable="true" style="@style/Theme.MatchParent">
+        <RelativeLayout android:background="@drawable/bkgd_popup" android:paddingLeft="@dimen/base_dimen" android:paddingTop="@dimen/base_dimen" android:paddingRight="16dp" android:paddingBottom="@dimen/base_dimen" android:duplicateParentState="true" style="@style/Theme.MatchWidth">
+            <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@color/yellow" android:gravity="center_horizontal" android:id="@+id/txt_invite_info_title" android:text="@string/input_again_title" style="@style/Theme.MatchWidth"/>
+            <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@+id/txt_invite_info_message" android:layout_marginTop="@dimen/base_dimen" android:text="@string/input_again_body" android:layout_below="@+id/txt_invite_info_title" style="@style/Theme.MatchWidth"/>
+            <Button android:id="@+id/btn_close_symbol" android:clickable="false" android:duplicateParentState="true" android:layout_width="20dp" android:layout_height="20dp" android:text="@string/btn_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/Theme.Button.GrayCircle"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_gamecenter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/base_dimen" android:src="@drawable/btn_gamecenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appnana.android.offerwall.views.OfferLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Offer.Background">
+    <include android:id="@+id/layout_offer" layout="@layout/view_base_offer"/>
+</com.appnana.android.offerwall.views.OfferLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth.Vertical">
+    <include layout="@layout/widget_dilivider"/>
+    <RelativeLayout android:clipChildren="false" android:clipToPadding="false" style="@style/Theme.MatchWidth.OfferItem">
+        <ImageView android:id="@+id/img_icon" android:duplicateParentState="true" android:layout_width="64dp" android:layout_height="64dp" android:contentDescription="@string/tips_offers"/>
+        <LinearLayout android:duplicateParentState="true" android:layout_marginLeft="@dimen/base_dimen" android:layout_toRightOf="@+id/img_icon" android:layout_marginStart="@dimen/base_dimen" android:layout_toEndOf="@+id/img_icon" style="@style/Theme.WrapContent.Vertical">
+            <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@drawable/color_black_white" android:ellipsize="end" android:id="@+id/txt_name" android:duplicateParentState="true" android:singleLine="true" style="@style/Theme.WrapContent"/>
+            <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@drawable/color_gray_white" android:id="@+id/txt_short_desc" android:duplicateParentState="true" android:layout_width="180dp" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <include android:id="@+id/layout_nanas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-16dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="-16dp" android:layout_alignParentEnd="true" layout="@layout/widget_nanas"/>
+    </RelativeLayout>
+</LinearLayout>

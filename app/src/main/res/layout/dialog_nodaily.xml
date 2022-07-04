@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:padding="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+    <LinearLayout android:padding="@dimen/base_dimen" style="@style/Theme.MatchParent.Vertical.Main">
+        <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@color/orange" android:gravity="center_horizontal" android:id="@+id/txt_title" style="@style/Theme.MatchWidth"/>
+        <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/txt_message" android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth"/>
+        <RelativeLayout style="@style/Theme.MatchWidth">
+            <LinearLayout android:background="@drawable/border_dotted" android:layout_marginTop="@dimen/base_dimen" android:baselineAligned="false" style="@style/Theme.MatchWidth">
+                <LinearLayout android:gravity="center" android:padding="@dimen/base_dimen" android:layout_weight="0.5" style="@style/Theme.MatchWidth.Vertical">
+                    <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:text="@string/earn_at_least" style="@style/Theme.WrapContent"/>
+                    <TextView android:textAppearance="@style/TextAppearance.XLarge" android:textColor="@color/green" android:id="@+id/txt_earn_at_least" style="@style/Theme.WrapContent"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/green" android:layout_marginTop="-8dp" android:text="@string/header_currency" style="@style/Theme.WrapContent"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:text="@string/from_offers" style="@style/Theme.WrapContent"/>
+                </LinearLayout>
+                <include layout="@layout/widget_dotted_vline"/>
+                <LinearLayout android:gravity="center" android:padding="@dimen/base_dimen" android:layout_weight="0.5" style="@style/Theme.MatchWidth.Vertical">
+                    <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:text="@string/no_daily_nanas_body_4" style="@style/Theme.WrapContent"/>
+                    <TextView android:textAppearance="@style/TextAppearance.XXLarge" android:textColor="@color/green" android:id="@+id/txt_invite_at_least" style="@style/Theme.WrapContent"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@color/black" android:gravity="center" android:text="@string/no_daily_nanas_body_5" style="@style/Theme.WrapContent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.Small" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/orange_circle" android:layout_width="@dimen/no_daily_circle_size" android:layout_height="@dimen/no_daily_circle_size" android:text="@string/no_daily_nanas_body_2" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_marginTop="@dimen/base_dimen" style="@style/Theme.MatchWidth">
+            <Button android:id="@+id/btn_negative" android:layout_marginRight="4dp" android:layout_weight="0.5" style="@style/Theme.Button.Orange"/>
+            <Button android:id="@+id/btn_positive" android:layout_marginLeft="4dp" android:layout_weight="0.5" style="@style/Theme.Button.Orange"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
